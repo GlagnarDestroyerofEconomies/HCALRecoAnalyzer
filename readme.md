@@ -3,6 +3,7 @@ This is a primitive EDAnalyzer to compare rechits to simhits. The rechit collect
 
 # Installation
 Follow these instructions to install:
+
 1. `cmsrel CMSSW_5_3_8_patch2`
 2. `cd CMSSW_5_3_8_patch2`
 2. `mkdir Analyzers && cd Analyzers`
@@ -19,6 +20,7 @@ This analyzer takes two inputs: a GEN-SIM-RAW file and the corresponding RECO fi
 This analyzer produces two TNtuples in a single ROOT file: one for the simhit collection (s) and one for the rechit collection (r).
 
 # Known Issues
+
 1. It would be better to produce TTrees with TBranches instead of TNtuples in the output.
 2. The configuration file, `hcalrecoanalyzer_cfg.py`, should be modified to accommodate command-line arguments.
 3. Pileup is not treated.
